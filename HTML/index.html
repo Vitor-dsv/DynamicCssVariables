@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Stories</title>
+    <link rel="stylesheet" href="../CSS/styles.css">
+</head>
+
+<body>
+    <header>
+        <h1>Formulário</h1>
+    </header>
+    <main>
+        <form onsubmit="event.preventDefault()">
+            <div class="linha">
+                <label for="idUsuario">ID Usuário:</label>
+                <input type="text" name="idUsuario" id="idUsuario">
+            </div>
+
+            <div class="linha">
+                <label for="senhaUsuario">Senha:</label>
+                <input type="password" name="senhaUsuario" id="senhaUsuario">
+            </div>
+
+            <div class="linha">
+                <input type="submit" value="Login" onclick="validarLogin()">
+                <input type="submit" value="Cancelar" onclick="cancelar()">
+            </div>
+        </form>
+    </main>
+    <script src="../JS/script.js"></script>
+</body>
+
+</html>
